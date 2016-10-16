@@ -16,6 +16,8 @@ class RechnungenTableViewController : UITableViewController {
     
     private var context : NSManagedObjectContext {
         return monat.managedObjectContext!
+        
+        
     }
     
     private lazy var rechnungen: NSFetchedResultsController = {
@@ -28,6 +30,11 @@ class RechnungenTableViewController : UITableViewController {
         resultsController.delegate = self
         return resultsController
     }()
+    
+    
+//    unwind segue 
+//    save context
+//    expand context with a new entry
 }
 
 // MARK: - Fetched Results Controller Delegate

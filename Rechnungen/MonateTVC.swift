@@ -61,6 +61,9 @@ class MonateTableViewController : UITableViewController {
         presentViewController(alertController, animated: true, completion: nil)
     }
     
+        // add prepareForSegue method
+        // change actual month name to german 
+    
 }
 
 
