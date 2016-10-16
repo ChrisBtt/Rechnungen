@@ -9,21 +9,33 @@
 /* Begin PBXBuildFile section */
 		835ACA071DA39B40006C4954 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835ACA061DA39B40006C4954 /* AppDelegate.swift */; };
 		835ACA091DA39B40006C4954 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835ACA081DA39B40006C4954 /* ViewController.swift */; };
-		835ACA0C1DA39B40006C4954 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 835ACA0A1DA39B40006C4954 /* Main.storyboard */; };
 		835ACA0F1DA39B40006C4954 /* Rechnungen.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 835ACA0D1DA39B40006C4954 /* Rechnungen.xcdatamodeld */; };
 		835ACA111DA39B40006C4954 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 835ACA101DA39B40006C4954 /* Assets.xcassets */; };
 		835ACA141DA39B40006C4954 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 835ACA121DA39B40006C4954 /* LaunchScreen.storyboard */; };
+		835ACA1C1DA39C17006C4954 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 835ACA1B1DA39C17006C4954 /* Storyboard.storyboard */; };
+		835ACA1E1DA39C63006C4954 /* MonateTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835ACA1D1DA39C63006C4954 /* MonateTVC.swift */; };
+		835ACA201DA39CDF006C4954 /* RechnungenTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835ACA1F1DA39CDF006C4954 /* RechnungenTVC.swift */; };
+		835ACA281DA39F19006C4954 /* Rechnungen+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835ACA241DA39F19006C4954 /* Rechnungen+CoreDataProperties.swift */; };
+		835ACA291DA39F19006C4954 /* Rechnungen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835ACA251DA39F19006C4954 /* Rechnungen.swift */; };
+		835ACA2A1DA39F19006C4954 /* Monate+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835ACA261DA39F19006C4954 /* Monate+CoreDataProperties.swift */; };
+		835ACA2B1DA39F19006C4954 /* Monate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835ACA271DA39F19006C4954 /* Monate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		835ACA031DA39B40006C4954 /* Rechnungen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rechnungen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		835ACA061DA39B40006C4954 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		835ACA081DA39B40006C4954 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		835ACA0B1DA39B40006C4954 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		835ACA0E1DA39B40006C4954 /* Rechnungen.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Rechnungen.xcdatamodel; sourceTree = "<group>"; };
 		835ACA101DA39B40006C4954 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		835ACA131DA39B40006C4954 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		835ACA151DA39B40006C4954 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		835ACA1B1DA39C17006C4954 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		835ACA1D1DA39C63006C4954 /* MonateTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonateTVC.swift; sourceTree = "<group>"; };
+		835ACA1F1DA39CDF006C4954 /* RechnungenTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RechnungenTVC.swift; sourceTree = "<group>"; };
+		835ACA241DA39F19006C4954 /* Rechnungen+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Rechnungen+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		835ACA251DA39F19006C4954 /* Rechnungen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rechnungen.swift; sourceTree = SOURCE_ROOT; };
+		835ACA261DA39F19006C4954 /* Monate+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Monate+CoreDataProperties.swift"; path = "../Monate+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		835ACA271DA39F19006C4954 /* Monate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Monate.swift; path = ../Monate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +70,35 @@
 			children = (
 				835ACA061DA39B40006C4954 /* AppDelegate.swift */,
 				835ACA081DA39B40006C4954 /* ViewController.swift */,
-				835ACA0A1DA39B40006C4954 /* Main.storyboard */,
+				835ACA1B1DA39C17006C4954 /* Storyboard.storyboard */,
 				835ACA101DA39B40006C4954 /* Assets.xcassets */,
+				835ACA231DA39D36006C4954 /* View Controller */,
 				835ACA121DA39B40006C4954 /* LaunchScreen.storyboard */,
 				835ACA151DA39B40006C4954 /* Info.plist */,
-				835ACA0D1DA39B40006C4954 /* Rechnungen.xcdatamodeld */,
+				835ACA2C1DA39F26006C4954 /* CoreData */,
 			);
 			path = Rechnungen;
+			sourceTree = "<group>";
+		};
+		835ACA231DA39D36006C4954 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				835ACA1D1DA39C63006C4954 /* MonateTVC.swift */,
+				835ACA1F1DA39CDF006C4954 /* RechnungenTVC.swift */,
+			);
+			name = "View Controller";
+			sourceTree = "<group>";
+		};
+		835ACA2C1DA39F26006C4954 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				835ACA251DA39F19006C4954 /* Rechnungen.swift */,
+				835ACA241DA39F19006C4954 /* Rechnungen+CoreDataProperties.swift */,
+				835ACA261DA39F19006C4954 /* Monate+CoreDataProperties.swift */,
+				835ACA271DA39F19006C4954 /* Monate.swift */,
+				835ACA0D1DA39B40006C4954 /* Rechnungen.xcdatamodeld */,
+			);
+			name = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +161,7 @@
 			files = (
 				835ACA141DA39B40006C4954 /* LaunchScreen.storyboard in Resources */,
 				835ACA111DA39B40006C4954 /* Assets.xcassets in Resources */,
-				835ACA0C1DA39B40006C4954 /* Main.storyboard in Resources */,
+				835ACA1C1DA39C17006C4954 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +172,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				835ACA281DA39F19006C4954 /* Rechnungen+CoreDataProperties.swift in Sources */,
+				835ACA2A1DA39F19006C4954 /* Monate+CoreDataProperties.swift in Sources */,
+				835ACA2B1DA39F19006C4954 /* Monate.swift in Sources */,
+				835ACA201DA39CDF006C4954 /* RechnungenTVC.swift in Sources */,
 				835ACA0F1DA39B40006C4954 /* Rechnungen.xcdatamodeld in Sources */,
+				835ACA291DA39F19006C4954 /* Rechnungen.swift in Sources */,
 				835ACA091DA39B40006C4954 /* ViewController.swift in Sources */,
 				835ACA071DA39B40006C4954 /* AppDelegate.swift in Sources */,
+				835ACA1E1DA39C63006C4954 /* MonateTVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		835ACA0A1DA39B40006C4954 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				835ACA0B1DA39B40006C4954 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		835ACA121DA39B40006C4954 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
