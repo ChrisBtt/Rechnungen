@@ -62,7 +62,7 @@ class MonateTableViewController : UITableViewController {
     }
     
         // add prepareForSegue method
-        // change actual month name to german 
+        // change actual month name to german
     
 }
 

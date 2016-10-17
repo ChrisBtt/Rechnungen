@@ -16,14 +16,14 @@ class RechnungenTableViewController : UITableViewController {
     
     private var context : NSManagedObjectContext {
         return monat.managedObjectContext!
-        
-        
     }
     
-    private lazy var rechnungen: NSFetchedResultsController = {
+    lazy var rechnungen: NSFetchedResultsController = {
         // The fetch request defines the subset of objects to fetch
         let fetchRequest = NSFetchRequest(entityName: "Rechnungen")
         fetchRequest.sortDescriptors = [ NSSortDescriptor(key: "verwendung", ascending: true) ]
+        // We can also restrict the set of observed objects with a predicate:
+        fetchRequest.predicate = NSPredicate(format: "monat == %@", self.monat)
         // Create the fetched results controller with the fetch request
         let resultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: self.context, sectionNameKeyPath: nil, cacheName: nil)
         // The delegate can react to changes in the set of fetched objects
@@ -31,10 +31,40 @@ class RechnungenTableViewController : UITableViewController {
         return resultsController
     }()
     
+//    Eintrag zum Testen der TableView
+    
     
 //    unwind segue 
+    
 //    save context
 //    expand context with a new entry
+}
+
+// Table View Controller functions
+
+extension RechnungenTableViewController {
+    
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return rechnungen.sections!.count
+    }
+    
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        let rechnung = rechnungen.sections![section]
+        return rechnung.numberOfObjects
+    }
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
+        let rechnung = rechnungen.sections![indexPath.section].objects![indexPath.row] as! Rechnungen
+        
+//          NSNumber to String
+        let formatter = NSNumberFormatter()
+        formatter.numberStyle = .CurrencyStyle
+        
+        cell.textLabel?.text = rechnung.verwendung
+        cell.detailTextLabel?.text = formatter.stringFromNumber(rechnung.betrag!)
+        return cell
+    }
 }
 
 // MARK: - Fetched Results Controller Delegate
